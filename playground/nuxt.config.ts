@@ -1,8 +1,10 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
   MathJax: {
-    options: {
-      enableMenu: false,
+    mathjax: {
+      options: {
+        enableMenu: false,
+      },
     },
   },
   devtools: { enabled: false },

@@ -1,7 +1,7 @@
 {
   "name": "nuxt-mathjax",
   "version": "1.0.0",
-  "description": "My new Nuxt module",
+  "description": "A Nuxt 3 module for rendering mathematical notation using MathJax, with support for LaTeX, MathML, and AsciiMath.",
   "repository": "jeffreyturns/nuxt-mathjax",
   "license": "MIT",
   "type": "module",

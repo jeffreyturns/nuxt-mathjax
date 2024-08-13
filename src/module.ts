@@ -1,10 +1,9 @@
 import { defineNuxtModule, addPlugin, createResolver, addComponentsDir, addTemplate } from '@nuxt/kit'
+import type { CombinedComponent, MathJaxOptions } from './runtime/types/mathjax'
 
 export interface ModuleOptions {
-  combinedComponent: 'tex-chtml' | 'tex-chtml-full' | 'tex-svg' | 'tex-svg-full' | 'tex-mml-chtml' | 'tex-mml-svg' | 'mml-chtml' | 'mml-svg'
-  options: {
-    enableMenu?: boolean
-  }
+  component: CombinedComponent
+  mathjax: MathJaxOptions
 }
 
 export default defineNuxtModule<ModuleOptions>({
@@ -13,10 +12,8 @@ export default defineNuxtModule<ModuleOptions>({
     configKey: 'MathJax',
   },
   defaults: {
-    combinedComponent: 'tex-mml-chtml',
-    options: {
-      enableMenu: true,
-    },
+    component: 'tex-mml-chtml',
+    mathjax: {},
   },
   async setup(_options, _nuxt) {
     const resolver = createResolver(import.meta.url)
