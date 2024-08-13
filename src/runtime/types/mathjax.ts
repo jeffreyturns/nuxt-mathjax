@@ -183,7 +183,7 @@ export type DocumentOptions = {
 }
 
 export type MathJaxOptions = OptionalParams<{
-  typesetPromise: (arg0: any) => any
+  typesetPromise: (arg0: unknown) => unknown
   // Input Processor Options
   TeX: OptionalParams<TeXInputProcessor>
   MML: OptionalParams<MathMLInputProcessor>
