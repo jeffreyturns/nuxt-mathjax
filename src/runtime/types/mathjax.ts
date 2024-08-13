@@ -185,12 +185,12 @@ export type DocumentOptions = {
 export type MathJaxOptions = OptionalParams<{
   typesetPromise: (arg0: unknown) => unknown
   // Input Processor Options
-  TeX: OptionalParams<TeXInputProcessor>
-  MML: OptionalParams<MathMLInputProcessor>
-  AsciiMath: OptionalParams<AsciiMathInputProcessor>
+  tex: OptionalParams<TeXInputProcessor>
+  mml: OptionalParams<MathMLInputProcessor>
+  asciimath: OptionalParams<AsciiMathInputProcessor>
   // Output Processor Options
-  CHtml: OptionalParams<CommonHTMLOutputProcessor & CommonOutputProcessor>
-  SVG: OptionalParams<SVGOutputProcessor & CommonOutputProcessor>
+  chtml: OptionalParams<CommonHTMLOutputProcessor & CommonOutputProcessor>
+  svg: OptionalParams<SVGOutputProcessor & CommonOutputProcessor>
   options: OptionalParams<DocumentOptions>
   // TODO: add loader and startup options
 }>
